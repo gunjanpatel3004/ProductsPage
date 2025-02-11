@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Create Product</title>
-</head>
-<body>
-<nav>
-<a href="index.html">Home</a>
-<a href="create-product.html">Create Product</a>
-</nav>
-<div id="create-product">
-<form id="productForm">
-<label for="title">Title: </label>
-<input type="text" id="title" name="title" required>
-<label for="description">Description: </label>
-<textarea id="description" name="description" required></textarea>
- 
-            <label for="price">Price: </label>
-<input type="number" id="price" name="price" step="0.01" required>
- 
-            <label for="stock">Stock: </label>
-<input type="number" id="stock" name="stock" min="0" required>
-<button type="submit">Create Product</button>
-</form>
-</div>
-<script src="dist/create-product.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Product</title>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="create-product.html">Create Product</a>
+			<a href="list-products.html">List Products</a>
+		</nav>
+		<div id="create-product">
+			<form id="productForm">
+				<label for="title">Title: </label>
+				<input type="text" id="title" name="title" required />
+				<label for="description">Description: </label>
+				<textarea id="description" name="description" required></textarea>
+
+				<label for="price">Price: </label>
+				<input type="number" id="price" name="price" step="0.01" required />
+
+				<label for="stock">Stock: </label>
+				<input type="number" id="stock" name="stock" min="0" required />
+				<button type="submit">Create Product</button>
+			</form>
+		</div>
+		<script src="dist/create-product.js"></script>
+	</body>
 </html>
