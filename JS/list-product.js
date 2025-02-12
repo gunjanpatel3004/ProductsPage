@@ -1,26 +1,28 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const productTableBody = document.getElementById('productTableBody');
-    const products = JSON.parse(localStorage.getItem('products')) || [];
+import "../scss/list.scss";
 
-    products.forEach(product => {
-        const row = document.createElement('tr');
+document.addEventListener("DOMContentLoaded", function () {
+	const productTableBody = document.getElementById("productTableBody");
+	const products = JSON.parse(localStorage.getItem("products")) || [];
 
-        const titleCell = document.createElement('td');
-        titleCell.textContent = product.title;
-        row.appendChild(titleCell);
+	products.forEach((product) => {
+		const row = document.createElement("tr");
 
-        const descriptionCell = document.createElement('td');
-        descriptionCell.textContent = product.description;
-        row.appendChild(descriptionCell);
+		const titleCell = document.createElement("td");
+		titleCell.textContent = product.title;
+		row.appendChild(titleCell);
 
-        const priceCell = document.createElement('td');
-        priceCell.textContent = product.price.toFixed(2);
-        row.appendChild(priceCell);
+		const descriptionCell = document.createElement("td");
+		descriptionCell.textContent = product.description;
+		row.appendChild(descriptionCell);
 
-        const stockCell = document.createElement('td');
-        stockCell.textContent = product.stock;
-        row.appendChild(stockCell);
+		const priceCell = document.createElement("td");
+		priceCell.textContent = product.price.toFixed(2);
+		row.appendChild(priceCell);
 
-        productTableBody.appendChild(row);
-    });
+		const stockCell = document.createElement("td");
+		stockCell.textContent = product.stock;
+		row.appendChild(stockCell);
+
+		productTableBody.appendChild(row);
+	});
 });

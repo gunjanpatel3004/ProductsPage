@@ -1,27 +1,34 @@
 {
-  "name": "products_page",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gunjanpatel3004/ProductsPage.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gunjanpatel3004/ProductsPage/issues"
-  },
-  "homepage": "https://github.com/gunjanpatel3004/ProductsPage#readme",
-  "description": "",
-  "dependencies": {
-    "babel-loader": "^9.2.1",
-    "css-loader": "^7.1.2",
-    "html-webpack-plugin": "^5.6.3",
-    "mini-css-extract-plugin": "^2.9.2",
-    "sass": "^1.84.0",
-    "sass-loader": "^16.0.4"
-  }
+	"name": "products_page",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack server --mode development",
+		"build": "webpack --mode production",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gunjanpatel3004/ProductsPage.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gunjanpatel3004/ProductsPage/issues"
+	},
+	"homepage": "https://github.com/gunjanpatel3004/ProductsPage#readme",
+	"description": "",
+	"dependencies": {
+		"babel-loader": "^9.2.1",
+		"css-loader": "^7.1.2",
+		"html-webpack-plugin": "^5.6.3",
+		"mini-css-extract-plugin": "^2.9.2",
+		"sass": "^1.84.0",
+		"sass-loader": "^16.0.4"
+	},
+	"devDependencies": {
+		"webpack": "^5.97.1",
+		"webpack-cli": "^6.0.1",
+		"webpack-dev-server": "^5.2.0"
+	}
 }
